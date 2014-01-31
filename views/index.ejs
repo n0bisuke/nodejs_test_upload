@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>画像アップロード</h1>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+    	<input type="file" name="thumbnail">
+    	<input type="submit">
+    </form>
+
+    <script src="/javascripts/jquery-1.8.3.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/client.js"></script>
+  </body>
+</html>
